@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-main,
+.banner-container,
+.online-game-main,
+.online-play{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* shared styles */
+.display{
+    display: flex;
+}
+
+/* header-navbar */
+
+.navbar-main{
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.nav-left{
+    align-items: center;
+    gap: 15px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.nav-right{
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-primary button{
+    border: none;
+    background-color: rgb(222, 219, 219);
+    padding: 10px 20px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+/* banner-part */
+.banner-main{
+    background-color: #fbf5fb; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.071) inset;
+}
+
+.banner-text-part{
+    width: 50%;
+    margin-top: 80px;
+}
+.banner-img-part{
+    width: 50%;
+}
+
+.banner-img-part img{
+    width: 100%;
+}
+
+.goat{
+    font-size: 80px;
+    background-image: linear-gradient(#F948B2,#8758F1);
+    background-clip: text;
+    color: transparent;
+
+    text-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.415);
+}
+.goat-overlay{
+    text-shadow: none;
+    top: 7%;
+}
+.banner-text-part h2{
+    font-size: 30px;
+}
+
+
+/* cards section */
+
+
+/* .cards-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    
+    gap: 40px;
+}
+
+#no-1{
+    grid-column: 1/span 3;  
+    grid-row: 1/span 6;
+}
+#no-2{
+    grid-column: 4/span 3;  
+    grid-row: 1/span 6;
+}
+#no-3{
+    grid-column: 7/span 3;  
+    grid-row: 1/span 6;
+}
+#no-4{
+    grid-column: 10/span 3; 
+    grid-row: 1/span 6; 
+}
+
+.card img{
+    width: 100%;
+} */
+
+
+
+/* .card{
+    border: 2px solid red;
+} */
+.cards-container{
+
+    display: grid;
+    grid-template-areas: 
+    "a b c d"
+    ;
+    gap: 20px;
+    /* border: 2px solid red; */
+
+}
+
+.image{
+    width: 100%;
+}
+
+.no-1{
+    grid-area: a;
+}
+.no-2{
+    grid-area: b;
+}
+.no-3{
+    grid-area: c;
+}
+.no-4{
+    grid-area: d;
+}
+
+.card{
+    position: relative;
+}
+.watch-now{
+    position: absolute;
+    top: 39%;
+    left: 39%;
+    text-align: center;
+    display: none;
+}
+
+.cards-container img:hover + .watch-now{
+    display: block;
+    color: #f5119a;
+}
+.image:hover {
+    filter: brightness(50%);
+}
+
+/* online-play-card */
+.online-play{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 100px auto;
+    justify-content: center;
+    gap: 30px;
+}
+.online-play-card{
+    display: flex;
+    align-items: center;
+    
+
+    outline: none;
+    border-radius: 28px;
+    min-width: 200px;
+
+    background-color: rgb(241, 241, 240);
+    padding: 10px;
+    
+    font-size: 14px;
+}
+
+.online-play-card img{
+    width: 45px;
+}
+
+.online-play-card:hover{
+    outline: 2px solid plum;
+}

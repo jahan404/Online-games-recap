@@ -1,0 +1,113 @@
+@media screen  and (max-width: 576px){
+    .navbar-main,
+    .nav-right{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+    }
+
+    .banner-main{
+        background-color: #fbf5fb; 
+        box-shadow: none;
+        
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-part{
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 80px;
+        /* border: 2px solid red; */
+    
+    }
+    .banner-img-part{
+        width: 85%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+        background-color: white;
+    }
+
+    /* .banner-img-part img{
+        width: 90vw;
+    } */
+    .goat-overlay{
+        top: 18%;
+        /* bottom: 80%;    */
+    }
+
+
+
+
+
+
+
+
+
+
+    /* .cards-container{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(24,1fr);
+        
+        /* gap: 40px; */
+        /* padding: 20px; */
+        /* text-align: center; */
+        
+    /* }
+    #no-1{
+        grid-column: 2/span 10;  
+        grid-row: 1/span 6;
+    }
+    #no-2{
+        grid-column: 2/span 10;  
+        grid-row: 7/span 6;
+    }
+    #no-3{
+        grid-column: 2/span 10;  
+        grid-row: 13/span 6;
+    }
+    #no-4{
+        grid-column: 2/span 10; 
+        grid-row: 19/span 6; 
+    }  */
+
+    .cards-container{
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        ;
+
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .watch-now{
+        /* position: absolute; */
+        top: 45%;
+        left: 42%;
+        text-align: center;
+        display: none;
+    }
+    
+
+
+
+
+
+
+    .online-play-card{
+        min-width:100px;
+        border-radius: 20px;
+    
+    }
+    
+    .online-play-card img{
+        width: 30px;
+    }
+
+}
